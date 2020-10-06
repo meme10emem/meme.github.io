@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marians</title>
+</head>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<style>
+    body{
+        background-color: rgb(245, 186, 70);
+        background-attachment: fixed;
+    }
+
+    .btn1:hover{
+        opacity: 0.7;
+        color: white;
+        text-decoration: none;
+    }
+
+    img.marians{
+        max-width: 40%;
+    }
+
+    h1.txt1{
+        font-size: 450%; 
+        font-weight: 900; 
+        color: rgb(245, 186, 70);
+    }
+
+    h1.txt2{
+        font-size: 150%; 
+        font-weight: 900; 
+        color: rgb(245, 186, 70);
+    }
+
+    p.address{
+        font-weight: 700; 
+        font-size: 150%; 
+        font-family: courier new;
+    }
+
+    button.btn1{
+        padding-left: 3%; 
+        padding-right: 3%; 
+        background-color: rgb(245, 186, 70); 
+        color: rgba(173, 66, 13, 0.74);
+        font-size: 300%; 
+        font-weight: 900;
+        border: none;
+    }
+
+    @media screen and (max-width: 992px) {
+        body {
+            background-color: rgb(245, 186, 70);
+        }
+
+        img.marians{
+            max-width: 100%;
+        }
+
+        div.cont1{
+            margin-top: 10%;
+        }
+
+        h1.txt1{
+            font-size: 250%; 
+            font-weight: 900; 
+            color: rgb(245, 186, 70);
+        }
+
+        h1.txt2{
+            font-size: 100%; 
+            font-weight: 900; 
+            color: rgb(245, 186, 70);
+        }
+
+        p.address{
+            font-weight: 700; 
+            font-size: 80%; 
+            font-family: courier new;
+        }
+        button.btn1{
+            padding-left: 3%; 
+            padding-right: 3%; 
+            background-color: rgb(245, 186, 70); 
+            color: rgba(173, 66, 13, 0.74);
+            font-size: 200%; 
+            font-weight: 900;
+            border: none;
+        }
+
+    }
+    /* @media ends max width 992px */
+</style>
+
+<body>
+    <div class="cont1 container text-center">
+        <img class="marians" src="image/marians.png" alt="">
+    </div>
+
+    <br>
+
+    <p class="address text-uppercase text-center">Paseo mabini st. brgy. guinhawa, malolos, bulacan </p>
+
+    <br>
+
+    <div class="container-md text-center" style="background-color: rgba(173, 66, 13, 0.74);">
+        <br>
+        <h1 class="txt1">OPEN 24 HOURS</h1>
+
+        <h1 class="txt2">F &nbspR &nbspE &nbspE &nbsp &nbsp D &nbspE &nbspL &nbspI &nbspV &nbspE &nbspR &nbspY</h1>
+        
+        <br><br>
+
+        <div class="container">
+            <button class="btn1 img-rounded" type="button">ORDER NOW</button>
+        </div>
+
+        <br>
+    </div>
+</body>
+</html>
