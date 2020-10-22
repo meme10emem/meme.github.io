@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marians</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<style>
+
+    body{
+        background-color: blanchedalmond;
+        background-size: cover;
+    }
+
+    .logo{
+        max-width: 20%;
+    }
+
+    .nav-item{
+        font-size: 100%;
+        margin-top: 8%;
+    }
+
+    .nav-link{
+        color: blanchedalmond;
+    }
+
+    .navbar{
+        background-color: rgb(245, 186, 70);
+        box-shadow: 0 0 5px black;
+        border: none;
+    }
+
+    .imgslide{
+        height: auto;
+        width: 100%;
+    }
+
+    div.collapse.navbar-collapse{
+        margin-right: 15%;
+    }
+
+    #myNavbar .navbar-nav li.active a {
+        color: black;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    /*this is for home menu. card style*/
+    .product-card{
+        padding-top: 3rem;
+    }
+
+    .product-card .card-image-top{
+        height: 220px;
+        background-size: cover;
+        background-position: 50%;
+            background-position-x: 50%;
+            background-position-y: center;
+    }
+
+    .card{
+        background-color: wheat;
+        border: 1px solid rgba(0, 0, 0, .20);
+        border-radius: .40rem;
+        padding-bottom: 1rem;
+    }
+
+    .card-body{
+        padding: 1.25rem;
+    }
+
+    /*this is css is for grow hover*/
+    .wrapper-link {
+        display: block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.4s;
+        transition-property: transform;
+    }
+
+    .wrapper-link:hover,
+    .wrapper-link:focus,
+    .wrapper-link:active {
+        transform: scale(1.1);
+    }
+
+    .wrapper-link, .wrapper-link:hover {
+        color: unset;
+        text-decoration: none;
+            text-decoration-line: none;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+    }
+
+    div.carousel{
+        margin-top: 9%;
+    }
+
+    .carousel-fade .carousel-inner .item {
+        opacity: 0;
+        transition-property: opacity;
+    }
+
+    .carousel-fade .carousel-inner .active {
+        opacity: 1;
+    }
+
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .carousel-fade .carousel-inner .next.left,
+    .carousel-fade .carousel-inner .prev.right {
+        opacity: 1;
+    }
+
+    .carousel-fade .carousel-control {
+        z-index: 5;
+    }
+
+    @media screen and (max-width: 992px) {
+
+        div.collapse.navbar-collapse{
+            margin-right: -1%;
+        }
+
+        div.carousel{
+            margin-top: 20%;
+        }
+    }
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+                <a href="home.html">
+                    <img src="image/marians.png" class="logo"/>
+                </a>
+
+            </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="home.html" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="home.html" class="nav-link">Contact us</a></li>
+            </ul>
+          
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      
+    <main>
+        <section>
+            <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="image/marians1.jpg" style="max-width: 100%;" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/marians2.jpg" style="max-width: 100%;" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/marians3.jpg" style="max-width: 100%;" alt="">
+                    </div>
+                </div>
+        
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        </section>
+        
+        <br><br>
+
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="product-card col-md-3 col-sm-4">
+                    <a href="" class="wrapper-link">
+                        <div class="card text-center">
+                            <div class="card-image-top" style="background-image: url(image/pares.png);"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">BEEF PARES</h3>
+                            <p class="card-text">PHP 65.00</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="product-card col-md-3 col-sm-4">
+                    <a href="" class="wrapper-link">
+                        <div class="card text-center">
+                            <div class="card-image-top" style="background-image: url(image/mami.png);"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">MAMI</h3>
+                            <p class="card-text">PHP 50.00</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="product-card col-md-3 col-sm-4">
+                    <a href="" class="wrapper-link">
+                        <div class="card text-center">
+                            <div class="card-image-top" style="background-image: url(image/bulalo.png);"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">HOT BULALO</h3>
+                            <p class="card-text">PHP 80.00</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="product-card col-md-3 col-sm-4">
+                    <a href="" class="wrapper-link">
+                        <div class="card text-center">
+                            <div class="card-image-top" style="background-image: url(image/sisig.png);"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">PORK SISIG</h3>
+                            <p class="card-text">PHP 150.00</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+    </main>
+
+            
+</body>
+
+
+</html>
